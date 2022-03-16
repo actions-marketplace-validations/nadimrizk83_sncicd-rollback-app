@@ -65,7 +65,7 @@ export default class App {
             throw new Error(Errors.INCORRECT_CONFIG)
 
         const params: string = this.buildParams(options)
-        return `https://${this.props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/rollback?${params}`
+        return `https://${this.props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/rollback?${params}`
     }
 
     /**

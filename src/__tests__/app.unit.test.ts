@@ -32,7 +32,7 @@ describe(`App lib`, () => {
             const app = new App(props)
 
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/rollback?sys_id=${options.sys_id}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/rollback?sys_id=${options.sys_id}&version=${options.version}`,
             )
         })
         it(`without instance parameter`, () => {
@@ -49,7 +49,7 @@ describe(`App lib`, () => {
             const app = new App(props)
 
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/rollback?sys_id=${options.sys_id}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/rollback?sys_id=${options.sys_id}&version=${options.version}`,
             )
         })
         it(`with just scope parameter`, () => {
@@ -58,7 +58,7 @@ describe(`App lib`, () => {
             const app = new App(props)
 
             expect(app.buildRequestUrl(options)).toEqual(
-                `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/rollback?scope=${options.scope}&version=${options.version}`,
+                `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/rollback?scope=${options.scope}&version=${options.version}`,
             )
         })
     })
@@ -99,7 +99,7 @@ describe(`App lib`, () => {
                 Accept: 'application/json',
             },
         }
-        const url = `https://${props.nowInstallInstance}.service-now.com/api/sn_cicd/app_repo/rollback?sys_id=${props.appSysID}&version=${inputs.version}`
+        const url = `https://${props.nowInstallInstance}.servicenowservices.com/api/sn_cicd/app_repo/rollback?sys_id=${props.appSysID}&version=${inputs.version}`
         expect(post).toHaveBeenCalledWith(url, {}, config)
     })
     describe(`getInputVersion`, () => {
