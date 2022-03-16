@@ -1,4 +1,4 @@
-name: 'ServiceNow CI/CD Rollback App'
+name: 'ServiceNow CI/CD Rollback App - Custom Domain for Instance'
 description: 'Initiate a rollback of a specified application to a specified version.'
 author: "ServiceNow"
 inputs:
